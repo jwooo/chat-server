@@ -24,14 +24,24 @@ repositories {
 }
 
 dependencies {
+    // Spring Data JPA
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.springframework.boot:spring-boot-starter-validation'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-websocket'
+    // Spring Data Mongo
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+    // Spring Validation
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    // Embedded Mongo DB
+    implementation 'de.bwaldvogel:mongo-java-server:1.45.0'
+    // Spring Web
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    // Spring WebSocket
+    implementation 'org.springframework.boot:spring-boot-starter-websocket'
+    // Lombok
     compileOnly 'org.projectlombok:lombok'
-    runtimeOnly 'com.h2database:h2'
     annotationProcessor 'org.projectlombok:lombok'
+    // h2
+    runtimeOnly 'com.h2database:h2'
+    // Spring Test
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }

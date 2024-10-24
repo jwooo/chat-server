@@ -5,8 +5,6 @@ import com.chatserver.api.member.request.MemberLoginRequest;
 import com.chatserver.api.member.request.MemberRegisterRequest;
 import com.chatserver.api.support.SessionUser;
 import com.chatserver.application.member.MemberService;
-import jakarta.servlet.http.Cookie;
-import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
